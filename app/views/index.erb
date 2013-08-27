@@ -1,0 +1,51 @@
+<div class="container">
+  <h1>Welcome to Sinatra!</h1>
+  <p>Hello, world!</p>
+
+  <table>
+    <tr>
+      <th>File Description</th>
+      <th>File Location</th>
+    </tr>
+    <tr>
+      <td>This view file</td>
+      <td><code><%= __FILE__.gsub(Sinatra::Application.root, '') %></code></td>
+    </tr>
+    <tr>
+      <td>The layout file</td>
+      <td><code><%= File.expand_path('../layout.erb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
+    </tr>
+    <tr>
+      <td>The current controller</td>
+      <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
+    </tr>
+  </table>
+<!-- 
+  <form action="/cool_url" method="POST">
+  <input type="text" name="input" placeholder="type in here">
+  <input type="submit" name="submit">
+  </form>
+
+  <form action="/cool_url" method="GET">
+  <input type="submit" value="get">
+  </form>
+
+  <form action="/try" method="POST">
+  <input type="text" name="title" placeholder="put in title">
+  <input type="text" name="price" placeholder="put in price">
+  <textarea name="description" placeholder="put in description"></textarea>
+  <input type="submit" value="enter">
+</form> -->
+
+<form action="/dropdown" method="POST">
+<select name="mydropdown">
+<option value="Milk">Fresh Milk</option>
+<option value="Cheese">Old Cheese</option>
+<option value="Bread">Hot Bread</option>
+<input type="submit" value="enter">
+</select>
+</form>
+
+
+</div>
+
